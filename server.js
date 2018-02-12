@@ -11,8 +11,8 @@ server.get('/', (req, res) => {
 })
 
 server.post('/', (req, res) => {
-    console.log(req.json);
-    res.json(req);
+    console.log(req.body);
+    res.json(req.body);
 })
 
 server.listen(port, () => {
